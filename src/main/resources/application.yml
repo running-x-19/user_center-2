@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api #全局接口
+
+spring:
+  application:
+    name: xwl-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xwl_center?serverTimezone=UTC&&characterEncoding=utf-8
+    username: root
+    password: awd13616881911
+  session:
+    timeout: 86400
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: is_delete
+      logic-delete-value: 1 #逻辑已删除表示1
+      logic-not-delete-value: 0
