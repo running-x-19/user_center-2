@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.xwl.usercenter.mapper")
 public class UserCenterApplication {
     public static void main(String[] args) {
+        System.out.println("....");
         SpringApplication.run(UserCenterApplication.class, args);
     }
 }
